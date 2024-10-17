@@ -432,7 +432,7 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' nc-s
 Then, start a netcat client container in an interactive mode:
 
 ```console
-docker run -it netcat <nc-server ip> 8000
+docker run --name nc-client -it netcat <nc-server ip> 8000
 ```
 
 Start typing some text and see it printed on the server side when you hit enter.
