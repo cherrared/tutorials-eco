@@ -390,7 +390,7 @@ Create a file named `Dockerfile` with the following content:
 
 ```console
 FROM alpine:latest
-LABEL description "Simple netcat image"
+LABEL description="Simple netcat image"
 
 RUN apk add --no-cache netcat-openbsd
 
