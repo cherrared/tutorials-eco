@@ -23,7 +23,7 @@ During this tutorial, we will learn few things like:
 
 > Skip this step if you have an already created VM
 
-You need to create a VM using a Linux-based distribution of your choosing, e.g. debian, ubuntu, kali, etc.
+You need to create a VM using a Linux-based distribution of your choosing, e.g. https://lubuntu.me/downloads/ 
 
 To create a VM you can use one of the following VMMs:
 
