@@ -55,6 +55,9 @@ Do the following steps:
 - Install *k3s* locally on you machine
 - Check the installation status (e.g. by listing your cluster nodes)
 - Get the node information using the `-o wide` flag
+- After installation, check the status of the K3s service:
+    ```bash
+    sudo systemctl status k3s
 - (Optional) Install the *dashboard* by following instructions [here](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) and [here](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
 
 > Note: you can enable `kubectl` auto completion using `kubectl completion`
