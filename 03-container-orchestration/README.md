@@ -58,6 +58,12 @@ Do the following steps:
 - After installation, check the status of the K3s service:
     ```bash
     sudo systemctl status k3s
+- The K3s installation automatically sets up the kubeconfig file. You can access and copy it in the ~/.kube config file:
+    ```bash
+    sudo cat /etc/rancher/k3s/k3s.yaml
+    mkdir -p ~/.kube
+    sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+    sudo chown $(whoami):$(whoami) ~/.kube/config
 - (Optional) Install the *dashboard* by following instructions [here](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) and [here](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
 
 > Note: you can enable `kubectl` auto completion using `kubectl completion`
