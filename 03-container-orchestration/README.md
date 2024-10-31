@@ -212,13 +212,7 @@ The *httpd* pod is listning on the port 80 for http requests:
 curl <pod-replica-x-ip-address>:80
 ```
 
-Do the same test using your VM public IP (you can also use your browser):
-
-```console
-curl <public-ip-address>:80
-```
-
-The pod IP address is private and only reachable from within the cluster. To make you application reachable from outside the cluster, you need to use the *Service* resource.
+You notice that the pod IP address is private and only reachable from within the cluster. To make you application reachable from outside the cluster, you need to use the *Service* resource.
 
 `Question`
 
