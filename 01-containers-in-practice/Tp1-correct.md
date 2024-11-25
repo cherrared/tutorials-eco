@@ -103,13 +103,12 @@ docker info
 
 - What is the Docker server (daemon) version ?
 - What are the supported networking plugins ?
-** Use 'docker info' **
+**Use 'docker info'**
 ![image](https://github.com/user-attachments/assets/08e37b23-8082-40a4-951a-922641915bd8)
 
 
 - Does Docker use SELinux ? If not, what are the supported tools ?
-**Yes, Docker can use SELinux for security. When SELinux is enabled on a system, Docker containers can run with SELinux policies to enforce security  controls
-**
+**Yes, Docker can use SELinux for security. When SELinux is enabled on a system, Docker containers can run with SELinux policies to enforce security  controls**
 ### Install Docker Compose
 
 `Action` + `Discover`
@@ -139,12 +138,12 @@ docker --help
 `Question`
 
 - What are the CLI commands that can give you:
-    - the list of the running containers <span style="color: red;"> docker ps </span>
-    - the list of available container images <span style="color: red;"> docker images </span>
-    - some container statistics (CPU, RAM, I/O, etc.) <span style="color: red;"> docker stats </span>
-    - the list of networks created by default <span style="color: red;"> docker network ls </span>
-- What is the command that can let you execute a command inside a running container ? <span style="color: red;"> docker exec </span>
-- What is the command that can let you download a container image ? <span style="color: red;"> docker pull </span>
+    - the list of the running containers **docker ps**
+    - the list of available container images **docker images**
+    - some container statistics (CPU, RAM, I/O, etc.) **docker stats**
+    - the list of networks created by default  **docker network ls**
+- What is the command that can let you execute a command inside a running container ? **docker exec**
+- What is the command that can let you download a container image ? **docker pull**
 
 
 ## What is a container ? (~45 minutes)
@@ -189,13 +188,13 @@ docker run --name httpd -d -e INSTITUTION=isep httpd:alpine
 
 - What is the result of `ps -aef |grep httpd` now ?
 - What is the `PID` and `PPID` of the parent `httpd` process ?
- <span style="color: red;"> 
+
    ```root      1234     1  0 12:34 ?        00:00:00 httpd -DFOREGROUND ```
 
 
     PID: 1234 (the ID of the httpd process)
     PPID: 1 (the ID of the parent process, which is typically the init process)
-</span>
+
 Compare that with the output of the following command:
 
 ```console
@@ -205,9 +204,7 @@ docker top httpd
 `Question`
 
 - What can you notice about both outputs ?
-<span style="color: red;"> 
-  When you run docker top httpd, you will see similar information but specifically for the processes running inside the httpd container. The output will show the PID of the processes as seen from within the container.
-</span>
+**When you run docker top httpd, you will see similar information but specifically for the processes running inside the httpd container. The output will show the PID of the processes as seen from within the container.**
 `Action`
 
 Let's now see what this container (or iseolated Linux process) is made of. Just like a normal Linux process, you can find more details about it in the `/proc` (https://man7.org/linux/man-pages/man5/proc.5.html), the process information pseudo-filesystem.
@@ -239,19 +236,14 @@ docker exec httpd env
 `Question`
 
 - What do you notice ?
-  
-<span style="color: red;"> 
-    Contents of /proc/<PID>/environ:
+  **Contents of /proc/<PID>/environ:
         The environ file will contain environment variables for the httpd process, including the INSTITUTION variable you set when running the container. The variables are typically separated by null characters (\0), which may make them appear as a single continuous string when viewed directly.
 
     Output of docker exec httpd env:
         Running docker exec httpd env will display the environment variables set within the container, including the INSTITUTION variable. The output will be formatted in a more readable way, with each variable on a new line.
 
     The environment variables listed in /proc/<PID>/environ and the output from docker exec httpd env should match, confirming that the environment variables seen in the container's process are the same as those accessible within the container.
-    The key difference is in the format: /proc/<PID>/environ shows the variables in a raw format, while docker exec presents them in a user-friendly format.
-
-
-</span> 
+    The key difference is in the format: /proc/<PID>/environ shows the variables in a raw format, while docker exec presents them in a user-friendly form**
 
 You can also verify the container's default gateway, by comparing:
 
