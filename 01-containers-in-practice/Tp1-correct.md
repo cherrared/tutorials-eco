@@ -103,14 +103,13 @@ docker info
 
 - What is the Docker server (daemon) version ?
 - What are the supported networking plugins ?
- <span style="color: red;"> Use 'docker info' </span>
+** Use 'docker info' **
 ![image](https://github.com/user-attachments/assets/08e37b23-8082-40a4-951a-922641915bd8)
 
 
 - Does Docker use SELinux ? If not, what are the supported tools ?
- <span style="color: red;"> Yes, Docker can use SELinux for security. When SELinux is enabled on a system, Docker containers can run with SELinux policies to enforce security  controls
- </span>
-
+**Yes, Docker can use SELinux for security. When SELinux is enabled on a system, Docker containers can run with SELinux policies to enforce security  controls
+**
 ### Install Docker Compose
 
 `Action` + `Discover`
