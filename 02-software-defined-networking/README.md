@@ -15,19 +15,22 @@ During this tutorial, we will learn few things like:
 
 > Note: when you find something like `<something-to-be-replaced>` in a command, this mean that you need to update that part of the command.
 
-Voucher Link:
-
-<a href="https://www.digitalocean.com/?refcode=ef5a5f3726df&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" /></a>
 
 ## Prerequisites
 
-These prerequisites only concern you if you will use a Virtual Machine (VM) on a public cloud to execute the different steps. For that, you need to have:
+### VM deployment
 
-- Windows Users: an **ssh client** already configured on you desktop (I recommend using [mobaxterm](https://mobaxterm.mobatek.net/download.html) for windows users)
-- MAC Users: shell + [XQuartz](https://www.xquartz.org/)
-- pick an **account** from the accounts csv file containing: VM's public IP address and credentials needed for connecting
+> Skip this step if you have an already created VM
 
-> Note: you need to **enables X11 forwarding** on you ssh session (will be needed for the 1st part of the TP)
+You need to create a VM using a Linux-based distribution of your choosing, e.g. https://lubuntu.me/downloads/ 
+
+To create a VM you can use one of the following VMMs:
+
+  - VirtualBox: https://www.virtualbox.org/
+  - Vagrant + VirtualBox: https://www.vagrantup.com
+  - VMware Workstation Player: https://www.vmware.com/uk/products/workstation-player.html
+  - etc.
+  - 
 
 ## Before you start
 
@@ -326,6 +329,7 @@ Now start another terminal; in you first terminal execute:
 ```console
 ip netns exec netns-green tshark -i tap-green
 ```
+> Note: install tshark if you don't have it in your VM
 
 In you second terminal:
 
@@ -464,7 +468,7 @@ ps aux |grep ovs
 - Which OpenFlow version/s are supported by your OVS virtual switch ?
 
 `Action` + `Question`
-
+- Describe the bash script `subnet-with-openvswitch.sh`
 - Use the provided bash script `subnet-with-openvswitch.sh` to create the infrastructure
 - Start a *tshark* or a *tcpdump* on *switch1* to listen to ICMP packets
 - Ping a *netns-x* from a *netns-y* where x,y are in [1,2,3] (What do you notice ?)
@@ -596,7 +600,7 @@ app activate org.onosproject.openflow-base \
     org.onosproject.fwd
 ```
 
-Finally, navigate to `http://<public-ip>:8181/onos/ui` and login using the same credentials: karaf/karaf
+Finally, navigate to `http://localhost:8181/onos/ui` and login using the same credentials: karaf/karaf
 
 > Note: Press the **H** key on your keyboard to activate/deactivare hosts visibility in the network topology.
 
