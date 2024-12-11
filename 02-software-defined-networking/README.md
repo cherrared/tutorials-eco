@@ -36,7 +36,6 @@ To create a VM you can use one of the following VMMs:
 
 I recommend that you create a text file with your favorite editor where you will continuously copy the commands and their output to help you with your TP report.
 
-> Please note that the **VM will be destroyed** upon finishing the TP with a **grace period of 1 hour** approximately.
 
 ## Linux Virtual Networking Devices (~30 minutes)
 
