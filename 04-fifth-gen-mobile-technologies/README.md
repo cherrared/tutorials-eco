@@ -51,7 +51,7 @@ Git clone the free5gc-compose project from: https://github.com/free5gc/free5gc-c
 ### Explore the configuration
 
  1. What is the configured Public Land Mobile Network (PLMN) ID ?
- 2. What are the configured 5G slices ?
+ 2. What are the configured 5G slices ? explain the "sst" and "sd"?
  3. What are the integrity algorithms used by the Access and Mobility management Function ?
  4. What are the ciphering algorithms used by the Access and Mobility management Function ?
  5. What are the supported PLMN IDs by the AUthentication Server Function ?
