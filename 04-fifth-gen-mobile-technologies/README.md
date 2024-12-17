@@ -9,9 +9,6 @@ During this tutorial, we will learn few things like:
 - How can we deploy an end-to-end 5G system ?
 - What are the main configuration elements of the 5GC ?
 
-Voucher Link:
-
-<a href="https://www.digitalocean.com/?refcode=ef5a5f3726df&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" /></a>
 
 ## Prerequisites
 
