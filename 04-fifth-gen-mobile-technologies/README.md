@@ -54,7 +54,7 @@ Git clone the free5gc-compose project from: https://github.com/free5gc/free5gc-c
  2. What are the configured 5G slices ? explain the "sst" and "sd"?
  3. What are the integrity algorithms used by the Access and Mobility management Function ?
  4. What are the ciphering algorithms used by the Access and Mobility management Function ?
- 5. What are the supported PLMN IDs by the AUthentication Server Function ?
+ 5. What are the supported PLMN IDs by the AUthentication Server Function ? what do you notice if you compare it to AMF PLMN ID?
  6. What is the configured Tracking Area Code for the gNodeB ?
  7. What are the 5G slices supported by the gNodeB ?
  8. What is the N2 service port of the AMF ?
