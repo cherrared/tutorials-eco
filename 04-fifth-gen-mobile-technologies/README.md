@@ -84,7 +84,7 @@ Use the provided docker-compose file to deploy the following components:
 
 ### WebUI
 
-Connect to the WebUI and verify that your 5GC is up and running: https://free5gc.org/guide/Webconsole/Create-Subscriber-via-webconsole/
+Connect to the WebUI and verify that your 5GC is up and running.
 
 ## Attach a UE, capture traffic, and analyze (~60 minutes)
 
