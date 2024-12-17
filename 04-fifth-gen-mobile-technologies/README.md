@@ -15,7 +15,18 @@ Voucher Link:
 
 ## Prerequisites
 
-These prerequisites only concern you if you will use a Virtual Machine (VM) on a public cloud to execute the different steps. For that, you need to have:
+### VM deployment
+
+> Skip this step if you have an already created VM
+
+You need to create a VM using a Linux-based distribution of your choosing, e.g. https://lubuntu.me/downloads/ 
+
+To create a VM you can use one of the following VMMs:
+
+  - VirtualBox: https://www.virtualbox.org/
+  - Vagrant + VirtualBox: https://www.vagrantup.com
+  - VMware Workstation Player: https://www.vmware.com/uk/products/workstation-player.html
+  - etc.
 
 - an **ssh client** already configured on you desktop
 - **credentials** for your VM
