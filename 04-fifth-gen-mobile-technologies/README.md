@@ -59,7 +59,6 @@ Git clone the free5gc-compose project from: https://github.com/free5gc/free5gc-c
  7. What are the 5G slices supported by the gNodeB ?
  8. What is the N2 service port of the AMF ?
  9. What is the service port of the Network Repository Function ?
- 10. What is the service port of the Policy and Control Function ?
  11. What are the available Data Network Names ?
  12. What are the IP pools for each Data network in each slice ?
  13. What is the Subscription Permanent Identifier of the UE default configuration ?
