@@ -91,11 +91,11 @@ Connect to the WebUI and verify that your 5GC is up and running.
 ### UE provisionning
 
 
-Provision a UE in the 5G core network using the WebUI (localhost:5000), see the **Option 2: Run UE on a separate container** in https://github.com/free5gc/free5gc-compose
+Provision a UE in the 5G core network using the WebUI (localhost:5000),
 
 ### Attachment procedure
 
-Start an attachment procedure of the UE to the gNB and core network
+Start an attachment procedure of the UE to the gNB and core network,  see the **Option 1 or 2** in https://github.com/free5gc/free5gc-compose
 
 ### Analysis
 
